@@ -34,7 +34,7 @@
       </a>
       <div class="nav-links">
         <a href="#work">Work</a>
-        <a href="blog.html" target="_blank" rel="noreferrer">Blog</a>
+        <a href="#blog">Blog</a>
         <a href="#capabilities">Capabilities</a>
         <a href="#journey">Journey</a>
         <a href="#contact">Contact</a>
@@ -47,7 +47,7 @@
   </header>
 
   <main id="top">
-    <section class="hero shell section reveal">
+    <section class="hero shell section reveal home-view-section">
       <div class="hero-grid">
         <div class="hero-main">
           <p class="eyebrow">Portfolio 2026</p>
@@ -100,7 +100,7 @@
       </div>
     </section>
 
-    <section class="shell intro-band reveal">
+    <section class="shell intro-band reveal home-view-section">
       <div class="intro-grid">
         <div class="section-key">
           <span>01</span>
@@ -116,7 +116,7 @@
       </div>
     </section>
 
-    <section class="shell section reveal" id="work">
+    <section class="shell section reveal home-view-section" id="work">
       <div class="section-head">
         <div class="section-key">
           <span>02</span>
@@ -182,7 +182,184 @@
       </div>
     </section>
 
-    <section class="shell section reveal" id="capabilities">
+    <section class="page-hero shell section reveal blog-view-section" id="blog" hidden>
+      <div class="page-hero-grid">
+        <div>
+          <p class="page-kicker">Project Blog</p>
+          <h1>How I started my projects, how I built them, and what I learned from the process.</h1>
+          <p class="page-intro">
+            This blog is separate from the portfolio view, but it still lives in the same page.
+            Here I can explain each project in a more detailed way, beyond short portfolio points.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-ink" href="#project-blogs">Read Project Blogs</a>
+            <a class="button button-outline" href="#work">Back to Portfolio</a>
+          </div>
+        </div>
+
+        <aside class="blog-aside">
+          <h3>Blog Snapshot</h3>
+          <div class="blog-meta">
+            <div>
+              <span>Focus</span>
+              <strong>Project stories and build process</strong>
+            </div>
+            <div>
+              <span>Purpose</span>
+              <strong>Show the thinking behind each project, not only the result</strong>
+            </div>
+            <div>
+              <span>Format</span>
+              <strong>One page inside the site, separate from the portfolio sections</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="shell intro-band reveal blog-view-section" hidden>
+      <div class="intro-grid">
+        <div class="section-key">
+          <span>01</span>
+          <p>Start</p>
+        </div>
+        <div class="intro-text">
+          <p>
+            I wanted a space where I could explain each project more clearly. A portfolio shows the
+            highlights, but a blog helps me talk about the problem, the approach, the technical
+            choices, and the lessons from the work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell section reveal blog-view-section" id="project-blogs" hidden>
+      <div class="section-head">
+        <div class="section-key">
+          <span>02</span>
+          <p>Project Blogs</p>
+        </div>
+        <h2>Separate notes for each project, with the idea, process, and what I learned.</h2>
+      </div>
+
+      <div class="blog-layout">
+        <aside class="blog-sidebar">
+          <h3>Inside This Blog</h3>
+          <div class="blog-toc">
+            <a href="#tracker-project">Health and GPS Tracker</a>
+            <a href="#music-project">Music Genre and Language Detection</a>
+            <a href="#next-writing">Other project writing</a>
+          </div>
+          <p>
+            This view gives each project its own write-up so visitors can read the full story
+            without mixing it into the main portfolio flow.
+          </p>
+        </aside>
+
+        <div class="blog-entries">
+          <article class="blog-entry" id="tracker-project">
+            <div class="blog-entry-head">
+              <span class="blog-pill">Project 01</span>
+              <p>Jul 2024 - Dec 2024</p>
+            </div>
+            <h3>Real-Time Health and GPS Tracker for Climbers</h3>
+            <p class="blog-entry-intro">
+              This project started from a practical safety problem. Climbers in remote locations can
+              face sudden health risks, route changes, or communication issues, and I wanted to
+              build a system that could monitor critical signals and send alerts early.
+            </p>
+            <ul class="blog-list">
+              <li>I combined health tracking and GPS monitoring into one safety-focused workflow.</li>
+              <li>I used Raspberry Pi and Arduino UNO to handle sensing, monitoring, and device-level coordination.</li>
+              <li>I worked on low-power thinking because remote use is not useful if the device drains quickly.</li>
+              <li>I explored SVM-based analysis to better separate and study temperature and blood pressure patterns.</li>
+            </ul>
+            <p>
+              What mattered most in this project was not only collecting data, but making the system
+              meaningful in a real environment. That pushed me to think about reliability, alerts,
+              and how technical choices connect to user safety.
+            </p>
+          </article>
+
+          <article class="blog-entry" id="music-project">
+            <div class="blog-entry-head">
+              <span class="blog-pill">Project 02</span>
+              <p>May 2025 - Jul 2025</p>
+            </div>
+            <h3>Music Genre Classification and Language Detection System</h3>
+            <p class="blog-entry-intro">
+              I built this project because it let me work at the intersection of machine learning,
+              audio analysis, and language understanding. I wanted to create something that did more
+              than classify a song, and instead combined genre recognition with lyric language
+              detection in one pipeline.
+            </p>
+            <ul class="blog-list">
+              <li>I used Mel spectrogram features with Librosa to convert raw audio into useful model input.</li>
+              <li>I built a CNN with TensorFlow and Keras for multi-class genre classification.</li>
+              <li>I added OpenAI Whisper to transcribe audio and identify lyric language from the result.</li>
+              <li>I used accuracy and loss tracking to evaluate model behavior and guide improvements.</li>
+            </ul>
+            <p>
+              This project helped me better understand how feature extraction, model selection, and
+              evaluation connect across an end-to-end ML workflow. It also pushed me to think about
+              how different AI tools can be combined into one useful system.
+            </p>
+          </article>
+
+          <article class="blog-entry blog-entry-muted" id="next-writing">
+            <div class="blog-entry-head">
+              <span class="blog-pill">More Soon</span>
+              <p>Upcoming</p>
+            </div>
+            <h3>Other Project Writing I Want to Add</h3>
+            <ul class="blog-list">
+              <li>Detailed case studies with screenshots, architecture notes, and final results.</li>
+              <li>What went wrong during development and how I fixed those problems.</li>
+              <li>How I chose tools, models, and workflows for different project types.</li>
+              <li>Shorter blog posts about lessons from datasets, debugging, and iteration.</li>
+            </ul>
+            <p>
+              I want this page to keep growing into a stronger project journal, not just a static
+              summary page. As I build more work, I will add more focused write-ups here.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell section reveal blog-view-section" hidden>
+      <div class="section-head">
+        <div class="section-key">
+          <span>03</span>
+          <p>Learning</p>
+        </div>
+        <h2>The blog helps me explain not only what I built, but how I think during the work.</h2>
+      </div>
+
+      <div class="blog-main">
+        <article class="blog-card">
+          <h3>What this blog adds</h3>
+          <ul class="blog-list">
+            <li>More detail than the portfolio cards can show.</li>
+            <li>Space to explain technical choices and reasoning.</li>
+            <li>A better way to document challenges, progress, and lessons.</li>
+            <li>A stronger personal story behind each project.</li>
+          </ul>
+        </article>
+
+        <article class="blog-card">
+          <h3>What I want to improve next</h3>
+          <ul class="blog-list">
+            <li>Add screenshots, diagrams, and project outcomes.</li>
+            <li>Write individual case studies for future projects.</li>
+            <li>Include debugging lessons and model evaluation notes.</li>
+            <li>Keep this blog updated as my portfolio grows.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell section reveal home-view-section" id="capabilities">
       <div class="section-head">
         <div class="section-key">
           <span>03</span>
@@ -239,7 +416,7 @@
       </div>
     </section>
 
-    <section class="shell section reveal" id="journey">
+    <section class="shell section reveal home-view-section" id="journey">
       <div class="section-head">
         <div class="section-key">
           <span>04</span>
@@ -276,7 +453,7 @@
       </div>
     </section>
 
-    <section class="shell section reveal">
+    <section class="shell section reveal home-view-section">
       <div class="section-head">
         <div class="section-key">
           <span>05</span>
@@ -301,7 +478,7 @@
       </div>
     </section>
 
-    <section class="shell section reveal" id="contact">
+    <section class="shell section reveal home-view-section" id="contact">
       <div class="contact-panel">
         <div class="contact-copy">
           <div class="section-key">
